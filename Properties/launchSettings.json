@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "_11LabsFunctionApp": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7137"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "DockerfileRunArguments": "--init",
+      "httpPort": 34174,
+      "useSSL": false
+    }
+  }
+}
