@@ -20,7 +20,7 @@ public class HttpFunction
         _blobStorageService = blobStorageService;
     }
 
-    [Function("Http2Function")]
+    [Function("HttpFunction")]
     public async Task<IActionResult> RunAsync([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequest req)
     {
         _logger.LogInformation("C# HTTP trigger function processed a request.");
